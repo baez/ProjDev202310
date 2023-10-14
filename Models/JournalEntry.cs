@@ -1,4 +1,4 @@
-﻿namespace ProjDev220310.Examples
+﻿namespace Models.Journal
 {
     public class JournalEntry
     {
@@ -9,6 +9,11 @@
         {
             Entry = entry;
             EntryIndex = entryIndex;
+        }
+
+        public override string ToString() 
+        {
+            return $"{this.EntryIndex} - {Entry}";
         }
     }
 }

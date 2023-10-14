@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using Models.Journal;
 
 namespace ProjDev220310.Examples
 {
@@ -9,6 +10,5 @@ namespace ProjDev220310.Examples
             File.WriteAllText(filename, journal.ToString());
             return true;
         }
-
     }
 }

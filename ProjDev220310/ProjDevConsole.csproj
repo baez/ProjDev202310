@@ -7,7 +7,7 @@
     <ProjectGuid>{57120BFD-22CE-40B3-93EA-F78F8D695737}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ProjDev220310</RootNamespace>
-    <AssemblyName>ProjDev220310</AssemblyName>
+    <AssemblyName>ProjDevConsole2023</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,14 +44,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Examples\Journal.cs" />
-    <Compile Include="Examples\JournalEntry.cs" />
-    <Compile Include="Examples\JournalRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Examples\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{7da2d576-11a8-430a-adc4-8cf54cb97a5c}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repositories2\Repositories.csproj">
+      <Project>{214A3DC6-AB22-474E-88C0-7989909B53A5}</Project>
+      <Name>Repositories</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
