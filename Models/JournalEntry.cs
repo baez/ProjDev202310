@@ -7,13 +7,13 @@
 
         public JournalEntry(string entry, int entryIndex)
         {
-            Entry = entry;
-            EntryIndex = entryIndex;
+            this.Entry = entry;
+            this.EntryIndex = entryIndex;
         }
 
         public override string ToString() 
         {
-            return $"{this.EntryIndex} - {Entry}";
+            return $"{this.EntryIndex} - {this.Entry}";
         }
     }
 }
