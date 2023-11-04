@@ -3,10 +3,15 @@ using Models.Journal;
 
 namespace ProjDev220310.Examples
 {
-    public class JournalRepository
+    public class JournalRepository : IJournalRepository
     {
+
+
         public bool Save(string filename, Journal journal)
         {
+            // search to make sure there is no existing journal 
+            // being written to
+
             File.WriteAllText(filename, journal.ToString());
             return true;
         }
