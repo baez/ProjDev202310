@@ -11,7 +11,7 @@ namespace ProjDev220310
             Console.WriteLine("Press a key to terminate the application.");
 
             var journalManagerTest = new JournalManagerTest();
-            journalManagerTest.AddJournal_WhenNewJournalFileDoesNotExist_ShouldCreateAndReturnTrue();
+            journalManagerTest.AddJournal_WhenNewJournalFileDoesNotExist_ShouldSucceed();
             journalManagerTest.AddJournal_WhenNewJournalFileExists_ShouldNotCreateAndFail();
         }
     }
