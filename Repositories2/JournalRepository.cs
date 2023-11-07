@@ -11,9 +11,13 @@ namespace ProjDev220310.Examples
         {
             // search to make sure there is no existing journal 
             // being written to
-
+            if (!File.Exists(filename))
+            {
             File.WriteAllText(filename, journal.ToString());
             return true;
+            }
+
+            return false;
         }
     }
 }
