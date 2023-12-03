@@ -7,6 +7,7 @@
 
     public class JournalManagerTest
     {
+        //
         //          What       Pre-condition         Post-condition
         public void AddJournal_WhenNewJournalFileDoesNotExist_ShouldSucceed()
         {
@@ -24,6 +25,7 @@
             if (result == false)
             {
                 Console.WriteLine("************* test failed *************");
+                throw new Exception($"Test {nameof(AddJournal_WhenNewJournalFileExists_ShouldNotCreateAndFail)} Failed");
             }
         }
 
@@ -43,6 +45,7 @@
             if (result == true)
             {
                 Console.WriteLine("***** Test failed *****");
+                throw new Exception($"Test for {nameof(AddJournal_WhenNewJournalFileExists_ShouldNotCreateAndFail)} Failed");
             }
         }
 
